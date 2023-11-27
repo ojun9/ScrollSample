@@ -5,4 +5,9 @@
 //  Created by jun on 2023/11/27.
 //
 
-import Foundation
+import SwiftUI
+
+struct Item: Identifiable {
+    var id: UUID = .init()
+    var color: Color
+}

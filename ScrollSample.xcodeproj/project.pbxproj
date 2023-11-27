@@ -14,6 +14,9 @@
 		BFBD87CE2B14D84E0064CC41 /* ScrollSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87CD2B14D84E0064CC41 /* ScrollSampleTests.swift */; };
 		BFBD87D82B14D84E0064CC41 /* ScrollSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87D72B14D84E0064CC41 /* ScrollSampleUITests.swift */; };
 		BFBD87DA2B14D84E0064CC41 /* ScrollSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87D92B14D84E0064CC41 /* ScrollSampleUITestsLaunchTests.swift */; };
+		BFBD87E82B14D9F90064CC41 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87E72B14D9F90064CC41 /* Item.swift */; };
+		BFBD87EB2B14DA520064CC41 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87EA2B14DA520064CC41 /* HomeView.swift */; };
+		BFBD87ED2B14DB4A0064CC41 /* LoopingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD87EC2B14DB4A0064CC41 /* LoopingScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		BFBD87D32B14D84E0064CC41 /* ScrollSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBD87D72B14D84E0064CC41 /* ScrollSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSampleUITests.swift; sourceTree = "<group>"; };
 		BFBD87D92B14D84E0064CC41 /* ScrollSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFBD87E72B14D9F90064CC41 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BFBD87EA2B14DA520064CC41 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BFBD87EC2B14DB4A0064CC41 /* LoopingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		BFBD87BB2B14D84C0064CC41 /* ScrollSample */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD87E62B14D9F00064CC41 /* Model */,
 				BFBD87BC2B14D84C0064CC41 /* ScrollSampleApp.swift */,
 				BFBD87BE2B14D84C0064CC41 /* ContentView.swift */,
 				BFBD87C02B14D84E0064CC41 /* Assets.xcassets */,
@@ -125,6 +132,24 @@
 				BFBD87D92B14D84E0064CC41 /* ScrollSampleUITestsLaunchTests.swift */,
 			);
 			path = ScrollSampleUITests;
+			sourceTree = "<group>";
+		};
+		BFBD87E62B14D9F00064CC41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD87E72B14D9F90064CC41 /* Item.swift */,
+				BFBD87E92B14DA430064CC41 /* View */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFBD87E92B14DA430064CC41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD87EA2B14DA520064CC41 /* HomeView.swift */,
+				BFBD87EC2B14DB4A0064CC41 /* LoopingScrollView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBD87ED2B14DB4A0064CC41 /* LoopingScrollView.swift in Sources */,
 				BFBD87BF2B14D84C0064CC41 /* ContentView.swift in Sources */,
+				BFBD87EB2B14DA520064CC41 /* HomeView.swift in Sources */,
+				BFBD87E82B14D9F90064CC41 /* Item.swift in Sources */,
 				BFBD87BD2B14D84C0064CC41 /* ScrollSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
