@@ -107,7 +107,6 @@ private struct ScrollViewHelper: UIViewRepresentable {
             let totalContenSize = mainContenSize + spacingSize
             
             // ここで書き換えを行なっている
-            
 
             if minX > totalContenSize {
                 scrollView.contentOffset.x -= totalContenSize
